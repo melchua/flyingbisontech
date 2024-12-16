@@ -1,0 +1,29 @@
+.hamburger-menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.hamburger-menu-show {
+  transform: translateY(0);
+}
+
+.hamburger-menu__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger-menu__contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

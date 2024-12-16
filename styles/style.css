@@ -1,0 +1,112 @@
+:root {
+  /* Light Mode */
+  --color-background: #1a202c; /* Deep space blue */
+  --color-header: #1a202c; /* Deep Blue */
+  --color-text: hsl(216, 15%, 52%); /* Slate Gray */
+  --color-primary: #2d9cdb; /* Bright Cyan rgb(45, 156, 219) */
+  --color-secondary: #007b9a; /* Electric blue */
+  --color-error: #eb5757; /* Fiery Coral */
+  --color-highlight: #6fcf97; /* Bright Lime */
+  --color-border: #e2e8f0; /* Light Gray for subtle borders */
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode */
+  --color-background: #1a202c; /* Deep Blue */
+  --color-header: #f7fafc; /* Soft White */
+  --color-text: #f7fafc; /* Soft White */
+  --color-primary: #2d9cdb; /* Bright Cyan */
+  --color-secondary: #6fcf97; /* Bright Lime */
+  --color-error: #eb5757; /* Fiery Coral */
+  --color-highlight: #6fcf97; /* Bright Lime */
+  --color-border: #2d3748; /* Darker Gray for borders */
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 400;
+
+  /* font-family: "Style Script", cursive; */
+}
+
+h2 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+strong {
+  color: var(--color-secondary);
+}

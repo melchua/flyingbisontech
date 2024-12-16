@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  background-color: var(--color-header);
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__bars {
+  width: var(--size-3xl);
+  height: var(--size-3xl);
+}
+
+.header__menu {
+  display: none;
+}
+
+.bison-logo {
+  padding: 0.5rem;
+}
+
+.bounce {
+  animation: bounce 5s ease;
+  animation-iteration-count: infinite;
+}
+
+.glow {
+  animation: glow 2s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(3%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes glow {
+  10% {
+    text-shadow: 0 0 3px #fff;
+  }
+  50% {
+    text-shadow: 0 0 6px #fff;
+  }
+  90% {
+    text-shadow: 0 0 3px #fff;
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo__title {
+  display: none;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 52px;
+  color: white;
+}
+
+.header__subtitle {
+  font-size: var(--size-xl);
+  letter-spacing: 0.7rem;
+  align-self: center;
+  /* color: var(--color-secondary); */
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+/* sm */
+/* @media (min-width: 640px) {
+} */
+/* md */
+@media (min-width: 768px) {
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header__logo__title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header__bars {
+    display: none;
+  }
+
+  .header__link {
+    font-size: var(--size-lg);
+    text-decoration: none;
+    font-weight: 200;
+    color: var(--color-text);
+    transition: color 0.3s;
+  }
+
+  .header__link:hover {
+    color: var(--color-secondary);
+  }
+}
+/* lg */
+/* @media (min-width: 1024px) {
+} */
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+/* xxl */
+/* @media (min-width: 1536px) {
+} */
