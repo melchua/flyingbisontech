@@ -3,6 +3,7 @@ import "../styles/style.css";
 import "../styles/components/header.css";
 import "../styles/components/section.css";
 import "../styles/components/hamburger-menu.css";
+import "../styles/components/footer.css";
 import "../styles/utils.css";
 
 // menu interaction
