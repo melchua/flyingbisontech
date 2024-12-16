@@ -113,7 +113,6 @@
       <section class="container section" id="featured">
         <h1>featured work</h1>
         <h2>Zenhub - Agile project management software</h2>
-
         <img src="/zenhub.gif" class="section__feature-image" />
 
         <h3>Summary</h3>
@@ -158,8 +157,9 @@
       <section class="container section section__contact" id="contact">
         <h1>Contact us</h1>
         <form
-          action="mailto:flyingbisontech@proton.me"
-          method="GET"
+          action="mailto:someone@example.com"
+          method="post"
+          enctype="text/plain"
           class="section__contact_form"
         >
           <label class="section__contact_form_label">Name:</label>
@@ -180,7 +180,9 @@
             placeholder="Short description of the problem you need solved"
             class="section__contact_form_input"
           />
-          <button type="submit" class="section__submit-button">Submit</button>
+          <button type="submit" value="send" class="section__submit-button">
+            Submit
+          </button>
         </form>
       </section>
     </main>

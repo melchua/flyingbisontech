@@ -40,6 +40,9 @@
 .section {
   margin-top: 5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* xs */
@@ -70,12 +73,8 @@
   .container {
     max-width: 1024px;
   }
-
   .section {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0 8rem;
   }
 }
 /* xl */

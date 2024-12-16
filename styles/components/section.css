@@ -6,8 +6,8 @@
 }
 
 .section__feature-image {
-  min-width: 200px;
-  max-width: 600px;
+  object-fit: contain;
+  padding: 1rem 2.5rem;
 }
 
 .section__hero {
@@ -61,6 +61,7 @@
 
 .section__contact_form_input {
   margin-bottom: 1rem;
+  padding: 0.3rem;
 }
 
 .section__contact_form_label {
